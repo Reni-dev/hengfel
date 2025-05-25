@@ -1,0 +1,24 @@
+/*
+* File: style.css
+* Author: Hanák Renáta
+* Copyright: 2025, Hanák Renáta
+* Group: Szoft 1/N
+* Date: 2025-05-25
+* Github: https://github.com/reni-dev/
+* Licenc: MIT
+*/
+
+#namePage {
+    -fx-background-image: url("./img/wallpaper1.png");
+    -fx-background-size: cover;
+}
+
+
+#calcPage {
+    -fx-background-image: url("./img/wallpaper2.png");
+    -fx-background-size: cover;
+}
+
+#calcButton {
+    -fx-background-color:  #20618c;
+}

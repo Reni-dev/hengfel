@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1180.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.MainController">
+  <tabs>
+    <Tab text="Számítás">
+      <content>
+        <AnchorPane fx:id="calcPage" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" stylesheets="@style.css">
+               <children>
+                  <Button fx:id="calcButton" layoutX="429.0" layoutY="386.0" mnemonicParsing="false" onAction="#onClickCalcButton" prefHeight="37.0" prefWidth="98.0" text="Számolj!" textFill="#cfcfce">
+                     <font>
+                        <Font name="Montserrat Medium" size="15.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="radiusField" layoutX="368.0" layoutY="260.0" prefHeight="25.0" prefWidth="222.0" promptText="sugár">
+                     <font>
+                        <Font size="15.0" />
+                     </font></TextField>
+                  <TextField fx:id="heightField" layoutX="367.0" layoutY="325.0" prefHeight="29.0" prefWidth="224.0" promptText="magasság">
+                     <font>
+                        <Font name="Montserrat Medium" size="15.0" />
+                     </font></TextField>
+                  <Label layoutX="232.0" layoutY="264.0" text="Sugár:" textFill="#cfcfce">
+                     <font>
+                        <Font name="Montserrat Medium" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="232.0" layoutY="328.0" text="Magasság:" textFill="#cfcfce">
+                     <font>
+                        <Font name="Montserrat Medium" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="areaField" layoutX="367.0" layoutY="533.0" prefHeight="29.0" prefWidth="223.0" promptText="terület">
+                     <font>
+                        <Font name="Montserrat Medium" size="15.0" />
+                     </font></TextField>
+                  <Label layoutX="232.0" layoutY="536.0" text="Terület:" textFill="#cfcfce">
+                     <font>
+                        <Font name="Montserrat Medium" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="362.0" layoutY="77.0" text="Kör alapú henger felszínének számítása" textFill="#cfcfce">
+                     <font>
+                        <Font name="MV Boli" size="25.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Névjegy">
+      <content>
+        <AnchorPane fx:id="namePage" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" stylesheets="@style.css">
+               <children>
+                  <Label layoutX="503.0" layoutY="85.0" text="Névjegy" textFill="#cfcfce">
+                     <font>
+                        <Font name="MV Boli" size="50.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="472.0" layoutY="571.0" text="Készítő: Hanák Renáta" textFill="#cfcfce">
+                     <font>
+                        <Font name="MV Boli" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="491.0" layoutY="603.0" text="Osztály: Szoft 1/N" textFill="#cfcfce">
+                     <font>
+                        <Font name="MV Boli" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="477.0" layoutY="641.0" text="Dátum: 2025-05-24" textFill="#cfcfce">
+                     <font>
+                        <Font name="MV Boli" size="22.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
